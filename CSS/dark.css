@@ -1,0 +1,53 @@
+body{
+    background-color: #252627;
+    color: #ffb899;
+}
+header{
+    background-color: #b33600;
+}
+footer{
+    background-color: #b33600;
+}
+section{
+    background-color: #992e00;
+    box-shadow: 4px 6px 0 0 rgba(22, 23, 23, 0.2);
+}
+
+a{
+    color: #ffb899;
+}
+a:hover{
+    color: #f39066;
+}
+
+.material-symbols-outlined{
+    color: #ffb899;
+}
+.material-symbols-outlined:hover{
+    color: #f39066;
+}
+
+.tooltip .tooltiptext {
+    background-color: #252627;
+    color: #ffb899;
+    border: solid 1px #f39066;
+}
+
+svg{
+    fill: #ffb899;
+}
+svg:hover{
+    fill: #f39066;
+}
+button {
+    color: #ffb899;
+}
+button:hover {
+    color: #f39066;
+}
+/* .icon{
+    filter: invert(85%) sepia(6%) saturate(3742%) hue-rotate(318deg) brightness(101%) contrast(101%);
+}
+.icon:hover{
+    filter: invert(55%) sepia(92%) saturate(280%) hue-rotate(332deg) brightness(98%) contrast(94%);
+} */

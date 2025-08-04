@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link id="theme" rel="stylesheet" href="">
+    <title>Foxes staff</title>
+</head>
+
+<body>
+    <div id="outer-conteiner">
+        <div id="inner-conteiner">
+            <header>
+
+
+                <div class="right-icon-conteiner">
+                    <button onclick="toggleTheme()">
+                        <?xml version="1.0" ?><svg class="icon sun" viewBox="0 0 512 512"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="Sun_and_moon">
+                                <circle cx="185.6708" cy="183.8122" r="65.625" />
+                                <path
+                                    d="M185.6708,87.5622a13.1256,13.1256,0,0,0,13.125-13.125V52.5622a13.125,13.125,0,1,0-26.25,0v21.875A13.1257,13.1257,0,0,0,185.6708,87.5622Z" />
+                                <path
+                                    d="M99.051,115.7519a13.1236,13.1236,0,1,0,18.56-18.56L102.1442,81.726a13.1236,13.1236,0,0,0-18.5595,18.56Z" />
+                                <path
+                                    d="M89.4208,183.8122a13.1257,13.1257,0,0,0-13.125-13.125H54.4208a13.125,13.125,0,0,0,0,26.25h21.875A13.1256,13.1256,0,0,0,89.4208,183.8122Z" />
+                                <path
+                                    d="M99.051,251.8725,83.5847,267.3431a13.1236,13.1236,0,1,0,18.56,18.56l15.4663-15.4706a13.1236,13.1236,0,1,0-18.5595-18.56Z" />
+                                <path
+                                    d="M185.6708,280.0622a13.1258,13.1258,0,0,0-13.125,13.125v21.875a13.125,13.125,0,0,0,26.25,0v-21.875A13.1257,13.1257,0,0,0,185.6708,280.0622Z" />
+                                <path
+                                    d="M272.2907,251.8725a13.1236,13.1236,0,1,0-18.56,18.56l15.4663,15.4706a13.1236,13.1236,0,1,0,18.56-18.56Z" />
+                                <path
+                                    d="M330.0458,183.8122a13.1257,13.1257,0,0,0-13.125-13.125h-21.875a13.125,13.125,0,0,0,0,26.25h21.875A13.1256,13.1256,0,0,0,330.0458,183.8122Z" />
+                                <path
+                                    d="M263.0109,119.5971a13.0824,13.0824,0,0,0,9.28-3.8452l15.4663-15.4663a13.1236,13.1236,0,1,0-18.56-18.56L253.7312,97.1923a13.125,13.125,0,0,0,9.28,22.4048Z" />
+                                <path
+                                    d="M456.9379,401.6714a63.97,63.97,0,0,1-14.9963,7.2055c-19.6448,6.5283-41.8787,2.9566-58.1439-9.8523a68.9311,68.9311,0,0,1-10.835-10.8339c-12.8088-16.2663-16.3806-38.5-9.8523-58.1471a63.8444,63.8444,0,0,1,7.2077-14.9931,8.8036,8.8036,0,0,0-10.1172-13.3034,87.5188,87.5188,0,1,0,110.0372,110.04A8.8,8.8,0,0,0,456.9379,401.6714Z" />
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="left-icon-conteiner">
+                    <button onclick="fontSizeIncrease()">
+                        <?xml version="1.0" ?><svg class="plus icon" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.1951 5.75446C15.4738 6.06095 15.9481 6.08354 16.2546 5.80491L18.5 3.76358L20.7455 5.80491C21.052 6.08354 21.5263 6.06095 21.805 5.75446C22.0836 5.44797 22.061 4.97364 21.7545 4.69502L19.0045 2.19504C18.7185 1.93499 18.2816 1.93499 17.9956 2.19504L15.2456 4.69502C14.9391 4.97364 14.9165 5.44797 15.1951 5.75446ZM12.0001 3.99998C12.3076 3.99998 12.5839 4.18767 12.6973 4.4735L18.4472 18.9733C18.5999 19.3584 18.4115 19.7943 18.0265 19.947C17.6414 20.0997 17.2055 19.9113 17.0528 19.5263L15.2579 14.9999H8.74231L6.94736 19.5263C6.79467 19.9113 6.35876 20.0997 5.97372 19.947C5.58869 19.7943 5.40033 19.3584 5.55302 18.9733L11.3029 4.4735C11.4163 4.18767 11.6926 3.99998 12.0001 3.99998ZM9.33713 13.4999H14.6631L12.0001 6.78453L9.33713 13.4999Z" />
+                        </svg>
+                    </button>
+
+                    <button onclick="fontSizeDecrease()">
+                        <?xml version="1.0" ?><svg class="minus icon" viewBox="0 -4 28 28"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.2546 2.19505C15.9481 1.91642 15.4738 1.93901 15.1951 2.2455C14.9165 2.55199 14.9391 3.02632 15.2456 3.30495L17.9956 5.80492C18.2816 6.06497 18.7185 6.06497 19.0045 5.80492L21.7545 3.30495C22.061 3.02632 22.0836 2.55199 21.805 2.2455C21.5263 1.93901 21.052 1.91642 20.7455 2.19505L18.5 4.23638L16.2546 2.19505ZM12.0001 3.99998C12.3076 3.99998 12.5839 4.18767 12.6973 4.47351L18.4472 18.9733C18.5999 19.3584 18.4115 19.7943 18.0265 19.947C17.6414 20.0997 17.2055 19.9113 17.0528 19.5263L15.2579 14.9999H8.74231L6.94736 19.5263C6.79467 19.9113 6.35876 20.0997 5.97372 19.947C5.58869 19.7943 5.40033 19.3584 5.55302 18.9733L11.3029 4.47351C11.4163 4.18767 11.6926 3.99998 12.0001 3.99998ZM12.0001 6.78454L9.33713 13.4999H14.6631L12.0001 6.78454Z" />
+                        </svg>
+                    </button>
+                </div>
+                <h1><a href="/HTML/index.html">the foxes</a></h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <div class="tooltip">
+                                <h3><a href="/HTML/world.html">world</a></h3>
+                                <span class="tooltiptext">recomend before other pages</span>
+                            </div>
+                        </li>
+                        <li>
+                            <h3><a style="text-decoration: underline" href="/HTML/characters.html">characters</a></h3>
+                        </li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li>
+                            <div class="tooltip">
+                                <h3><a href="#players">players</a></h3>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <!-- <div class="icon-conteiner">
+                    <button id="up">up</button>
+                </div> -->
+                <section>
+                    <h2>staff</h2>
+                    <h3>David Wymack</h3>
+                    <p>
+                    <div>David Vincent Wymack is the Foxes' coach.</div>
+                    <div>He is a large man, with tribal flame tattoos. He has brown
+                        eyes, and
+                        is often wearing a white wife beater and jeans.
+                    </div>
+                    <div>
+                        Wymack puts up a tough act in front of the Foxes, but he genuinely cares about them. He deals
+                        with
+                        their antics using both threats and sarcasm. <br>
+                        Wymack repeatedly tells his team members to not over-exert themselves on the court, especially
+                        if
+                        they are injured. He would rather lose a game than have a player indisposed for future games.
+                    </div>
+
+                    <div>Coach Wymack founded the Foxes to give people from difficult backgrounds another chance.
+                        Contrary
+                        to popular belief, this isn't a publicity stunt. Wymack is seen as idealistic for this. <br>
+
+                        To ensure the safety of his players, he goes beyond what a coach is supposed to do and even
+                        houses
+                        some players temporarily in his or Abby's appartment. He is protective of them and offers to
+                        help
+                        Neil if the cousins and Kevin pose too much of a problem, but mostly keeps out of the team's
+                        personal affairs.</div>
+                    </p>
+
+
+                    <h3>Abby Winfield</h3>
+                    <p>
+                        Abby Marie Winfield is the Foxes' nurse. She is decisive and has no problem to shut people up or
+                        order
+                        them around. Foxes
+                        usualy joke about Wymack's and Abby's relationship, but they deny it.
+                    </p>
+
+
+                    <h3>Betsy Dobson</h3>
+                    <p>
+                    <div>Betsy Jo Dobson is the Foxes' psychiatrist. </div>
+                    <div>Betsy's hair is pale brown and reaches to her chin. She has "a few extra curves" and laugh
+                        lines on her face. She wears narrow-rimmed glasses.
+                    </div>
+                    It is mandatory for the team to see her once a semester, but are free to visit her whenever they
+                    feel
+                    the need. This is included in the Foxes' tuition fees. She allows her patients to call her whatever
+                    they
+                    want, from "Betsy" to "Doc" to "Hey You".
+                    </p>
+                </section>
+
+
+                <section>
+                    <h2 id="players">Players</h2>
+                    <img id="foxes-img"
+                        src="https://images.squarespace-cdn.com/content/v1/61d3e1feff05fa08d6c0ea02/4cfe2184-0788-4f15-878c-af9bfe3d5bd6/Untitled_Artwork+17.png?format=1500w"
+                        alt="Foxes">
+                    <details name="player">
+                        <summary class="player-name">#1: Dan Wilds</summary>
+                        <p>
+                        <div>Danielle Leigh "Dan" Wilds is the captain of the Foxes and a 4th year at Palmetto State
+                            University.
+                            She
+                            is passionate about the Foxes and doesn't tolerate her teammates dragging them down by
+                            talking bad
+                            about
+                            the team.</div>
+
+                        <div>
+                            <h4>Appearance</h4>
+                            Her brown hair is cut “mercilessly short” in response to “nagging from the men” in her
+                            freshman year. She has brown eyes. Her smile was once described as “a toothy grin that
+                            was equal parts menace and mirth.” She is about 5'4"-5'7"/162-170cm tall.
+                        </div>
+
+                        <div>
+                            <h4>Personality</h4>
+                            Dan is passionate and adamant in enforcing the rules she sets. She wants the team to
+                            function (or
+                            at least not to kill one another) and fully acts her role as captain with conviction. She
+                            tries to
+                            include everyone in activities. <br>
+                            Just like the other members Dan loves to participate in the bets. <br>
+                            Dan majored in Athletic Training with a minor in Coaching
+                        </div>
+
+                        <div>
+                            <h4>Relationships</h4>
+                            <h5>Family</h5>
+                            Cathy Wilds (aunt)
+                            <h5>Romantic</h5>
+                            Matt Boyd (boyfriend)
+                        </div>
+
+                        <div>
+                            <h4>Other</h4>
+                            Dan worked as a stripper in high school as a way of funding her home life. Her stage name
+                            was
+                            Hennessey, named for the hard liquor. Her fellow strippers became what she considered to be
+                            her
+                            family, and she refers to them as her "sisters". To work there, Dan had a fake ID stating
+                            she was
+                            over eighteen. <br>
+                            She lived in a mobile home with her aunt, whom she calls by her first name, Cathy, and her
+                            children.
+                            Cathy had many "suitors", so when Dan first meets Coach Wymack, she first assumes he was
+                            looking for
+                            relations with her mother <br>
+                            Before Wymack came, Dan had no hope for playing Exy at university because she had been told
+                            that
+                            women weren't recruited. Wymack saw her play by chance; Renee's adoptive mother (a
+                            journalist)
+                            invited him to watch one of Renee's games. Dan was playing on the opposition's team. <br>
+                            Dan was signed to the Foxes in their second year and immediately became team captain.
+                            Because she
+                            was the first female captain in NCAA Class I Exy in history and because fans already
+                            disliked the
+                            Foxes, the public was cruel to her and even her teammates shredded her in public. She (and
+                            Wymack)
+                            persevered and slowly her team fell in behind her.
+                        </div>
+
+                        </p>
+                    </details>
+
+                    <details name="player">
+                        <summary class="player-name">#2: Kevin Day</summary>
+                        <p>
+                        <div>Kevin Day is the starting striker of the Palmetto State Foxes. He was formerly a member of
+                            the
+                            Edgar
+                            Allan Ravens and was considered one of the best contemporary Exy players alongside his
+                            adoptive
+                            brother
+                            Riko Moriyama until an injury to his dominant hand forced to relearn to play with his right
+                            hand.
+                            <br>
+                            Along with Riko, Kevin is often called "The Son of Exy" and "The Future of Exy,"
+                        </div>
+
+                        <div>
+                            <h4>Appearance</h4>
+                            Kevin has green eyes and dark hair, and is about 6' to 6'2.
+                            Kevin has a tattoo on his left cheekbone.
+                        </div>
+
+                        <div>
+                            <h4>Personality</h4>
+                            <div>Kevin was describes as arrogant, spineless, and Exy-obsessed. Because of his traumatic
+                                upbringing,
+                                Kevin most likely suffers from anxiety and PTSD. He's also made fun for being a 'healthy
+                                nut'
+                                when
+                                actually this can also be a result from his time with the Ravens and it's most likely an
+                                eating
+                                disorder.</div>
+                            <div>Because of Tetsuji and Riko, Kevin grew up with the mentality that Exy is the most
+                                important
+                                thing someone can have, which causes him to be merciless when it comes to the game. He
+                                has
+                                really high standards when it comes to Exy players and is not afraid to point other
+                                people
+                                faults. This, at times, causes people to get angry and snap at him.</div>
+                            <div>Even though hess shown as someone cold and egoistic, he has his own ways of caring for
+                                others
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4>Relationships</h4>
+                            <h5>Family</h5>
+                            Kayleigh Day † (mother) <br>
+                            Tetsuji Moriyama (former guardian)<br>
+                            Riko Moriyama † ("adoptive" brother)<br>
+
+                            <h5>Romantic</h5>
+                            Thea Muldani (girlfriend)
+                        </div>
+
+                        <div>
+                            <h4>Other</h4>
+                            His mother would bring Kevin by the Nest whenever her job brought her to the States
+                            (implying that
+                            up until her death, it is not unlikely that he grew up in Ireland/Europe). <br>
+                            Kevin seems to prefer reading or watching Exy games at his desk to playing video games with
+                            his
+                            roommates. <br>
+                            Kevin hates sitting in the back of Andrew's car, so he mostly rides shotgun. <br>
+                            Kevin is not a morning person. It is very difficult to wake him up if he is still tired,
+                            which is
+                            why Wymack keeps him moving to stop him from falling asleep again.<br>
+                            He knows how to manipulate people.<br>
+                            Kevin is majoring in history. When he first got to Palmetto he used to talk about it a lot
+                            until the
+                            other foxes told him to shut up. With time he just stopped altogether.<br>
+                            He loves to take photographs. In his dorm at the Nest he had a wall of pictures that he had
+                            taken
+                            during his travels with Riko.<br>
+                        </div>
+                        </p>
+                    </details>
+
+                    <details name="player">
+                        <summary class="player-name">#3: Andrew Minyard</summary>
+                        <p>
+                        <div>
+                            Andrew Joseph Minyard is a sophomore Criminal Justice major at Palmetto State University,
+                            and a
+                            goalie for the PSU Foxes Exy team. He is known for his ferocity both on and off the court.
+                        </div>
+                        <div>
+                            <h4>Appearance</h4>
+                            Andrew has blonde hair, pale skin and hazel eyes. He always wears black wristbands that
+                            reach from
+                            his wrists to his elbows. They are rumored to be a sarcastic attempt to differentiate him
+                            from his
+                            twin, Aaron, for other people's sake. In reality, he is hiding the scars on his wrists from
+                            years of
+                            self-harm, and a convenient sheath for knives. At 5' flat, he is very short - his Exy
+                            racquet is
+                            taller than he is - and "doesn't look like much" in person, however, he is also considered a
+                            person
+                            to be afraid of by the majority of The Foxes.
+                        </div>
+
+                        <div>
+                            <h4>Personality</h4>
+                            Andrew keeps his promises, almost to a fault. He will go very far out of his way to protect
+                            what's
+                            his. His moods generally range from apathy to violence, exceptions that allow differences in
+                            his
+                            attitude include Renee, Aaron, Kevin, Nicky, and Neil. His cold and heartless exterior is to
+                            hide
+                            his trauma and insecurities. He is dedicated to upholding a strict set of personal values
+                            and is
+                            wholly protective of the the people he cares for. Despite these sentiments, he outwardly
+                            appears to
+                            have little to no regard for his own life.
+                        </div>
+
+                        <div>
+                            <h4>Relationships</h4>
+                            <h5>Family</h5>
+                            Tilda Minyard † (biological mother) <br>
+                            Aaron Minyard (twin brother) <br>
+                            Luther Hemmick (uncle) <br>
+                            Maria Hemmick (aunt) <br>
+                            Nicky Hemmick (cousin) <br>
+
+                            <h5>Romantic</h5>
+                            Neil Josten ("nothing")
+                        </div>
+
+                        <div>
+                            <h4>Other</h4>
+                            The roof is a favorite hangout of Andrew's; he is afraid of heights (and of falling, as he
+                            says) and
+                            being on the roof makes him feel alive. <br>
+                            Andrew smokes, mostly out the window of his dorm room or on the roof. <br>
+                            Andrew always carries knives hidden under his wristbands. He got them from Renee and
+                            promised to
+                            keep them for her. <br>
+                            When Andrew wakes up through someone touching him, his first reflexive reaction is to punch
+                            them
+                            very hard. He doesn't seem to know this and is surprised when other people are hurt after
+                            they wake
+                            him. <br>
+                            Andrew has an expensive black Maserati. Only a small number of other people are allowed to
+                            drive his
+                            car, namely Nicky, Renee, and Neil. Andrew's style of driving can be described as reckless.
+                            <br>
+                            Andrew dislikes visiting the library. According to Nicky, he claims to be allergic to books.
+                            <br>
+                            Andrew is known to be a really good goalkeeper, but mostly can't be bothered with making an
+                            effort
+                            to live up to his potential. <br>
+                            He says he doesn't hate Exy because he doesn't care about it enough. He only puts up with it
+                            because
+                            it is less boring than "living". To him, Exy is pointless and could therefore never be fun.
+                            <br>
+                            He is really good at picking locks and breaks into Neil's room more than once. <br>
+                            Andrew doesn't like surprises. <br>
+                            He has an eidetic memory. <br>
+                        </div>
+                        </p>
+                    </details>
+
+                    <details name="player">
+                        <summary class="player-name">#4: Matt Boyd</summary>
+                        <p>
+                        <div>Matt is the Foxes' starting backliner. He is a junior. He mostly hangs out with Allison,
+                            Renee and
+                            his girlfriend Dan.</div>
+
+                        <div>
+                            <h4>Appearance</h4>
+                            Matt gels his black hair into short spikes. He has "faded but obvious track marks on both
+                            arms" from
+                            previous drug use. Mat is 6'4"-6'5"/193-195cm
+                        </div>
+
+                        <div>
+                            <h4>Relationships</h4>
+
+                            <h5>Family</h5>
+                            Donald Boyd (father) <br>
+                            Randy Boyd (mother) <br>
+
+                            <h5>Romantic</h5>
+                            Dan Wilds (girlfriend)
+                        </div>
+
+                        <div>
+                            <h4>Other</h4>
+                            Matt offers to intervene if Neil needs someone to kick Kevin's ass for him. <br>
+                            He owns a "monstrous" blue truck with a bed and an extended cab with extra seats. He crams
+                            it full
+                            of
+                            furniture, suitcases and crates to bring to Fox Tower and is still sad that he had to leave
+                            behind a
+                            lot
+                            of things that didn't fit. <br>
+                            He majored in Business Administration.
+                        </div>
+
+                        </p>
+                    </details>
+
+                    <details name="player">
+                        <summary class="player-name">#5: Aaron Minyard</summary>
+                        <p>
+                        <div>Aaron Minyard is Andrew's twin brother, often referred to as "the normal one". Aaron
+                            attends
+                            Palmetto State University and plays Exy as a backliner alongside Matt.</div>
+
+                        <div>
+                            <h4>Appearance</h4>
+                            Aaron and Andrew are identical twins with blonde hair and hazel eyes. They are 5 feet tall.
+                            Only
+                            Renee, Katelyn, and Neil can tell the twins apart when they switch places.
+                        </div>
+
+                        <div>
+                            <h4>Relationships</h4>
+
+                            <h5>Family</h5>
+                            Tilda Minyard † (mother) <br>
+                            Andrew Minyard (twin brother) <br>
+                            Luther Hemmick (uncle) <br>
+                            Maria Hemmick (aunt) <br>
+                            Nicky Hemmick (cousin) <br>
+
+                            <h5>Romantic</h5>
+                            Katelyn Mackenzie (girlfriend)
+                        </div>
+
+                        <div>
+                            <h4>Personality</h4>
+                            he just wants to be normal (whatever that is). Or special, perhaps, but in the positive ways
+                            of
+                            being special: intelligent, good-looking, and appreciated. He doesn't want to be associated
+                            with
+                            those he perceives to be losers, but the universe has conspired against him. He wasn't born
+                            into a
+                            normal family, and things haven't improved much since then. <br>
+                            Aaron is not particularly friendly with any of the other foxes, except his roommate and
+                            cousin
+                            Nicky. The two sometimes can be seen playing video games together.
+                        </div>
+
+                        </p>
+                    </details>
+
+                    <details name="player">
+                        <summary class="player-name">#7: Allison Reynolds</summary>
+                        <p>
+                        <div>Allison Reynolds is a dealer for the Palmetto State Foxes. She is a former heiress to the
+                            extremely
+                            wealthy Reynolds family.</div>
+                        <div>
+                            <h4>Appearance</h4>
+                            Allison has smoky gray eyes and long platinum blonde hair, which she commonly keeps in
+                            curls. She is
+                            5'4"-5'7" / 162-170cm tall She is known to wear immaculately done makeup, and her wardrobe
+                            consists
+                            entirely of designer clothes and brands.
+                        </div>
+
+                        <div>
+                            <h4>Personality</h4>
+                            Allison is proud and strong-willed. She is known for her haughty attitude. When her parents
+                            refused
+                            to let her play exy she started embarrassing them in public—starting arguments in front of
+                            the
+                            cameras, refusing to show up at charity events, and giving away family secrets.
+                        </div>
+
+                        <div>
+                            <h4>Relationships</h4>
+
+                            <h5>Family</h5>
+                            Mr. Reynolds (father) <br>
+                            Mrs. Reynolds (mother) <br>
+
+                            <h5>Romantic</h5>
+                            Seth Gordon † (on/off boyfriend)
+                        </div>
+
+                        <div>
+                            <h4>Other</h4>
+                            She became estranged from her parents when she decided to play Exy and refused to quit at
+                            their
+                            insistence. <br>
+                            Majored in Fashion Design with a minor in Marketing. <br>
+                            She owns a pink convertible. <br>
+                            Allison likes pop music.
+                        </div>
+
+                        </p>
+                    </details>
+
+                    <details name="player">
+                        <summary class="player-name">#8: Nicky Hemmick</summary>
+                        <p>
+                            Nicholas "Nicky" Hemmick is a backliner for the Palmetto State Foxes and cousin of Andrew
+                            and Aaron.
+                        <div>
+                            <h4>Appearance</h4>
+                            "Nicky was dark, with jet-black hair, dark brown eyes, and skin two shades too dark to be a
+                            tan." He
+                            is 5'10"-5'11"/1,77m-1,80m tall
+                        </div>
+
+                        <div>
+                            <h4>Personality</h4>
+                            Nicky is generally cheerful and happy. He is easily upset by the tragedies that many of his
+                            teammates experience during the series. He attempts to get along with everyone, though he
+                            sticks
+                            with Andrew's lot during most of the series. He is closest with Aaron.
+                            It is noted by Neil that Nicky's personality is probably more reserved than he typically
+                            shows, but
+                            that he portrays himself as loud, optimistic, and extroverted as a way to compensate for how
+                            closed
+                            off the twins are.
+                        </div>
+
+                        <div>
+                            <h4>Relationships</h4>
+
+                            <h5>Family</h5>
+                            Luther Hemmick (father) <br>
+                            Maria Hemmick (mother) <br>
+                            Tilda Minyard † (aunt) <br>
+                            Aaron Minyard (cousin) <br>
+                            Andrew Minyard (cousin) <br>
+
+                            <h5>Romantic</h5>
+                            Erik Klose (fiancé)
+                        </div>
+
+                        <div>
+                            <h4>Other</h4>
+                            Nicky speaks fluent German, due to his stay in Germany. <br>
+                            Aaron and Nicky enjoy video games. <br>
+                            When he meets Neil, Nicky is immediately interested in him and tries to find out whether he
+                            is gay.
+                            He continues to flirt with him until Andrew puts a stop to it. <br>
+                            Nicky likes movies and gossiping. <br>
+                            He and Erik have a list of celebrities they are allowed to have affairs with. <br>
+                            Nicky majored in Marketing. <br>
+                            Nicky likes electric dance music (EDM). <br>
+                            He never reconciles with his parents after their role in Andrew's assault, but Erik's
+                            parents treat
+                            him as if they were his own son. <br>
+                        </div>
+                        </p>
+                    </details>
+
+                    <details name="player">
+                        <summary class="player-name">#9: Renee Walker</summary>
+                        <p>
+                            Renee Walker is a goaltender for the Palmetto State Foxes.
+                        <div>
+                            <h4>Appearance</h4>
+                            Her hair is chin length and the last 2 inches are coloured in alternating pastel colours.
+                            She is
+                            5'4"/162cm tall. She uses scant make-up and dresses conservatively. She wears a silver cross
+                            necklace.
+                        </div>
+
+                        <div>
+                            <h4>Personality</h4>
+                            Renee has a calm disposition, and is the only one of the Foxes who can't be angered by
+                            Kevin's blunt
+                            criticism.
+
+                            Renee doesn't get involved in other people's fights in any way, but she occasionally
+                            mediates
+                            between her teammates. Otherwise, she gives friendly advice and is seen as a stabilizing
+                            factor for
+                            Andrew, along with the rest of the team.
+
+                        </div>
+
+                        <div>
+                            <h4>Relationships</h4>
+
+                            <h5>Family</h5>
+                            Stephanie Walker (adoptive mother)
+
+                            <h5>Romantic</h5>
+                            Jean Moreau (broken off)
+                        </div>
+
+                        <div>
+                            <h4>Other</h4>
+                            She is Christian and majored in Religious Studies. <br>
+                            The story is that Renee and Dan were captains of two very competitive teams in high school
+                            when
+                            Wymack was at their match, he liked what he saw and signed them both the same day. Both
+                            girls didn't
+                            like each other, but had to join fronts with Allison against the sexist boys on the original
+                            team to
+                            earn their place. <br>
+                            Renee doesn't drink. <br>
+                            When it comes to taste in music, Renee's pick is epic orchestral pieces (e.g. Two Steps from
+                            Hell)
+                            <br>
+                            Renee is very skilled with knives. <br>
+                        </div>
+                        </p>
+                    </details>
+
+                    <details name="player">
+                        <summary class="player-name">#10: Neil Josten</summary>
+                        <p>
+
+                            Neil Abram Josten or Nathaniel Abram Wesninski(birth name) is a striker for the Palmetto
+                            State
+                            Foxes, tho he can also play defense, since it was the first role he ever played.
+                        <div>
+                            <h4>Appearance</h4>
+                            Neil is described as a short(5'3"/160 cm) and athletic young adult. When he just joined
+                            Foxes Neil
+                            dyes his hair
+                            black and wears brown contact lenses. His hair is naturally auburn and his true eye color is
+                            a
+                            chilly shade of blue. He is also attractive, as seen with comments from Nicky and getting
+                            hit on by
+                            Marissa.
+                            His wardrobe consists mainly of worn, basic pieces of clothing, such as t-shirts, jeans, and
+                            sneakers. He does not have a particular fashion sense, valuing utility over anything else,
+                            and
+                            chooses his attire based on its ability to cover his scars and make him appear average.
+                        </div>
+
+                        <div>
+                            <h4>Personality</h4>
+                            Neil is perceptive, a trait necessary for his life on the run. When Andrew picks him up from
+                            the
+                            airport under the guise of being Aaron, Neil quickly figures out that he isn't actually
+                            Aaron, and
+                            that he's off his prescribed drugs. <br>
+                            Neil doesn't trust other people. He doesn't accept their offers of help and tries to solve
+                            every
+                            problem on his own, and he is generally closed off and secretive about himself. Neil also
+                            attempts
+                            to constantly stay in control of the situation. <br>
+                            Neil is almost as obsessed with Exy as Kevin is, although he had to stay away from it most
+                            of his
+                            life. This obsession makes him risk everything to play for the Foxes. <br>
+                            He doesn't shy away from a fight. He is good at starting fights but not at winning them.
+                            <br>
+                            Neil has a
+                            certain control over his emotions and can shove down his anger when it interferes with his
+                            survival.
+                        </div>
+
+                        <div>
+                            <h4>Relationships</h4>
+
+                            <h5>Family</h5>
+                            Nathan Wesninski † (father) <br>
+                            Mary Hatford † (mother) <br>
+                            Stuart Hatford (uncle)
+                            <h5>Romantic</h5>
+                            Andrew Minyard ("nothing")
+                        </div>
+
+                        <div>
+                            <h4>Other</h4>
+                            Neil has a key to the Foxes' stadium. <br>
+                            Neil likes running and is the fastest player in Class I Exy, clocking in a mile at four
+                            minutes.
+                            <br>
+                            He is good at picking locks. He inherited his lock picks from his mother. <br>
+                            Neil speaks French and German. <br>
+                            Neil doesn't take drugs or drink alcohol for fear that he might reveal something about
+                            himself when
+                            he is intoxicated. As a result, he has a very low tolerance for them. <br>
+                            He knows Matt's cell phone number by heart. <br>
+                            Once Neil hitch-hiked from New Mexico to Phoenix with various truckers. He pretended to be a
+                            sociology major conducting a survey. <br>
+                            Neil doesn't like sweets and prefers fruit over vegetables because of what was available
+                            during his
+                            time on the road. <br>
+                            After Andrew's car was destroyed, Neil used the majority of the money his mother had stolen
+                            to buy
+                            Andrew a Maserati. <br>
+                            Neil is of partial Polish descent from his father. <br>
+                            Neil smokes sometimes, but he more frequently lights a cigarette and lets it burn on its
+                            own. The
+                            smell of smoke reminds him of his mother, which is at once comforting and painful. <br>
+                            Because of the extensive scars on his torso, Neil will not change or shower in front of
+                            other
+                            people. To put on his Exy gear, he goes into a toilet stall. <br>
+                            Neil and Kevin train every weekday except for Friday, from ten to whenever Kevin sees fit
+                            (often
+                            midnight or later). <br>
+                        </div>
+                        </p>
+                    </details>
+
+                </section>
+
+            </main>
+        </div>
+        <footer>
+            <div class="footer-part">
+                <div>
+                    <p>Info taken mostly from <br>
+                        <span class="the-wiki"><a href="https://foxhole-court.fandom.com/wiki/The_Foxhole_Court_Wikia"
+                                target="_blank">the wiki</a></span>
+                    </p>
+                </div>
+                <p>Thank you for sticking around this far</p>
+            </div>
+            <div class="footer-part">
+                <p>Nora Sakavic (author)</p>
+                <ol>
+                    <li><a href="https://x.com/norasakavic" target="_blank">Twitter</a></li>
+                    <li><a href="https://korakos.tumblr.com/fox" target="_blank">Tumblr</a></li>
+                    <li><a href="https://www.goodreads.com/korakos" target="_blank">Goodreads</a></li>
+                </ol>
+            </div>
+        </footer>
+    </div>
+
+</body>
+<script src="/JS/script.js"></script>
+
+</html>

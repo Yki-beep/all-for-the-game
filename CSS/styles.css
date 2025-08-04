@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Markazi+Text:wght@400..700&family=Merienda:wght@300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Vesper+Libre:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Caveat+Brush&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Markazi+Text:wght@400..700&family=Merienda:wght@300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Vesper+Libre:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Caveat+Brush&family=Cookie&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Markazi+Text:wght@400..700&family=Merienda:wght@300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Vesper+Libre:wght@400;500;700;900&display=swap');
+
+body {
+    font-family: "Merienda", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    margin: 0;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+/* main{
+    min-height: calc(100vh - 310px)
+} */
+#outer-conteiner{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+#inner-conteiner{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer{
+    display: flex;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+.footer-part{
+    text-align: center;
+    width: 50%;
+}
+.the-wiki{
+    font-family: "Cookie", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+}
+section{
+    border-radius: 8px;
+    padding: 10px 25px;
+    margin: 25px 5px;
+}
+div{
+    margin-bottom: 16px;
+}
+
+@media (min-width: 1025px) {
+    section{
+        width: 70%;
+        justify-self: center;
+    }
+}
+
+/* ditails */
+.player-name{
+    text-transform: capitalize;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+
+
+/* tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: min-content;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 8px;
+   
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -45px; 
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* text */
+h1{
+  font-family: "Caveat Brush", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 20px 0 ;
+}
+h2{
+  font-family: "Caveat Brush", serif;
+  font-weight: 400;
+  font-size: 2em;
+  font-style: normal;
+  text-transform: capitalize;
+  text-align: center;
+}
+h3{
+    text-transform: capitalize;
+    margin: 0;
+    font-size: 1.2em;
+}
+h4{
+    text-transform: capitalize;
+    margin: 0;
+    font-size: 1em;
+}
+h5{
+    text-transform: capitalize;
+    margin: 0;
+    font-size: 0.9em;
+}
+a{
+    text-decoration: none;
+}
+
+/* lists */
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 5px 20px 10px;
+}
+ol{
+    list-style: none;
+    padding: 0;
+}
+
+
+/* imgs */
+#court-img{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    transform: rotate(-90deg);
+}
+#foxes-img{
+    width: 100%;
+}
+img{
+    border-radius: 8px;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+/* icons */
+.icon{
+    width: 3em;
+}
+.left-icon-conteiner{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin: 0;
+    top: 25px;
+    left: 3vw;
+}
+.right-icon-conteiner{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin: 0;
+    top: 25px;
+    right: 3vw;
+}
+/* 
+.icon-conteiner{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin: 0;
+    bottom: 5vh;
+    right: 5vw;
+}
+#up{
+    position: sticky;
+    bottom: 5vh;
+    right: 5vw;
+    padding: 10px;
+    border-radius: 50px;
+} */
+
+/* .sun{
+    position: absolute;
+    top: 25px;
+    right: 3vw;
+} */

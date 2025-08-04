@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link id="theme" rel="stylesheet" href="">
+    <title>Foxes world</title>
+</head>
+
+<body>
+    <div id="outer-conteiner">
+        <div id="inner-conteiner">
+            <header>
+
+
+                <div class="right-icon-conteiner">
+                    <button onclick="toggleTheme()">
+                        <?xml version="1.0" ?><svg class="icon sun" viewBox="0 0 512 512"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="Sun_and_moon">
+                                <circle cx="185.6708" cy="183.8122" r="65.625" />
+                                <path
+                                    d="M185.6708,87.5622a13.1256,13.1256,0,0,0,13.125-13.125V52.5622a13.125,13.125,0,1,0-26.25,0v21.875A13.1257,13.1257,0,0,0,185.6708,87.5622Z" />
+                                <path
+                                    d="M99.051,115.7519a13.1236,13.1236,0,1,0,18.56-18.56L102.1442,81.726a13.1236,13.1236,0,0,0-18.5595,18.56Z" />
+                                <path
+                                    d="M89.4208,183.8122a13.1257,13.1257,0,0,0-13.125-13.125H54.4208a13.125,13.125,0,0,0,0,26.25h21.875A13.1256,13.1256,0,0,0,89.4208,183.8122Z" />
+                                <path
+                                    d="M99.051,251.8725,83.5847,267.3431a13.1236,13.1236,0,1,0,18.56,18.56l15.4663-15.4706a13.1236,13.1236,0,1,0-18.5595-18.56Z" />
+                                <path
+                                    d="M185.6708,280.0622a13.1258,13.1258,0,0,0-13.125,13.125v21.875a13.125,13.125,0,0,0,26.25,0v-21.875A13.1257,13.1257,0,0,0,185.6708,280.0622Z" />
+                                <path
+                                    d="M272.2907,251.8725a13.1236,13.1236,0,1,0-18.56,18.56l15.4663,15.4706a13.1236,13.1236,0,1,0,18.56-18.56Z" />
+                                <path
+                                    d="M330.0458,183.8122a13.1257,13.1257,0,0,0-13.125-13.125h-21.875a13.125,13.125,0,0,0,0,26.25h21.875A13.1256,13.1256,0,0,0,330.0458,183.8122Z" />
+                                <path
+                                    d="M263.0109,119.5971a13.0824,13.0824,0,0,0,9.28-3.8452l15.4663-15.4663a13.1236,13.1236,0,1,0-18.56-18.56L253.7312,97.1923a13.125,13.125,0,0,0,9.28,22.4048Z" />
+                                <path
+                                    d="M456.9379,401.6714a63.97,63.97,0,0,1-14.9963,7.2055c-19.6448,6.5283-41.8787,2.9566-58.1439-9.8523a68.9311,68.9311,0,0,1-10.835-10.8339c-12.8088-16.2663-16.3806-38.5-9.8523-58.1471a63.8444,63.8444,0,0,1,7.2077-14.9931,8.8036,8.8036,0,0,0-10.1172-13.3034,87.5188,87.5188,0,1,0,110.0372,110.04A8.8,8.8,0,0,0,456.9379,401.6714Z" />
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="left-icon-conteiner">
+                    <button onclick="fontSizeIncrease()">
+                        <?xml version="1.0" ?><svg class="plus icon" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.1951 5.75446C15.4738 6.06095 15.9481 6.08354 16.2546 5.80491L18.5 3.76358L20.7455 5.80491C21.052 6.08354 21.5263 6.06095 21.805 5.75446C22.0836 5.44797 22.061 4.97364 21.7545 4.69502L19.0045 2.19504C18.7185 1.93499 18.2816 1.93499 17.9956 2.19504L15.2456 4.69502C14.9391 4.97364 14.9165 5.44797 15.1951 5.75446ZM12.0001 3.99998C12.3076 3.99998 12.5839 4.18767 12.6973 4.4735L18.4472 18.9733C18.5999 19.3584 18.4115 19.7943 18.0265 19.947C17.6414 20.0997 17.2055 19.9113 17.0528 19.5263L15.2579 14.9999H8.74231L6.94736 19.5263C6.79467 19.9113 6.35876 20.0997 5.97372 19.947C5.58869 19.7943 5.40033 19.3584 5.55302 18.9733L11.3029 4.4735C11.4163 4.18767 11.6926 3.99998 12.0001 3.99998ZM9.33713 13.4999H14.6631L12.0001 6.78453L9.33713 13.4999Z" />
+                        </svg>
+                    </button>
+
+                    <button onclick="fontSizeDecrease()">
+                        <?xml version="1.0" ?><svg class="minus icon" viewBox="0 -4 28 28"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.2546 2.19505C15.9481 1.91642 15.4738 1.93901 15.1951 2.2455C14.9165 2.55199 14.9391 3.02632 15.2456 3.30495L17.9956 5.80492C18.2816 6.06497 18.7185 6.06497 19.0045 5.80492L21.7545 3.30495C22.061 3.02632 22.0836 2.55199 21.805 2.2455C21.5263 1.93901 21.052 1.91642 20.7455 2.19505L18.5 4.23638L16.2546 2.19505ZM12.0001 3.99998C12.3076 3.99998 12.5839 4.18767 12.6973 4.47351L18.4472 18.9733C18.5999 19.3584 18.4115 19.7943 18.0265 19.947C17.6414 20.0997 17.2055 19.9113 17.0528 19.5263L15.2579 14.9999H8.74231L6.94736 19.5263C6.79467 19.9113 6.35876 20.0997 5.97372 19.947C5.58869 19.7943 5.40033 19.3584 5.55302 18.9733L11.3029 4.47351C11.4163 4.18767 11.6926 3.99998 12.0001 3.99998ZM12.0001 6.78454L9.33713 13.4999H14.6631L12.0001 6.78454Z" />
+                        </svg>
+                    </button>
+                </div>
+                <h1><a href="/HTML/index.html">the foxes</a></h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <div class="tooltip">
+                                <h3><a style="text-decoration: underline" href="/HTML/world.html">world</a></h3>
+                                <span class="tooltiptext">recomend before other pages</span>
+                            </div>
+                        </li>
+                        <li>
+                            <h3><a href="/HTML/characters.html">characters</a></h3>
+                        </li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li>
+                            <div class="tooltip">
+                                <h3><a href="#exy">exy</a></h3>
+                                <span class="tooltiptext">
+                                    <ol>
+                                        <li>
+                                            <h4><a href="#court">Court</a></h4>
+                                        </li>
+                                        <li>
+                                            <h4><a href="#positions">Positions</a></h4>
+                                        </li>
+                                        <li>
+                                            <h4><a href="#rules">rules</a></h4>
+                                        </li>
+                                        <li>
+                                            <h4><a href="#game">game</a></h4>
+                                        </li>
+                                    </ol>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+
+
+            <main>
+                <!-- <div class="icon-conteiner">
+                    <button id="up">up</button>
+                </div> -->
+                <section>
+                    <h2 id="world">Books</h2>
+                    <p>
+                    <div>This is a site about characters from Nora Sakavic's fitst trilogy All for the Game, consisting
+                        of "The
+                        Foxhole Court", "The Raven King" and "The King's Men". There is a second trilogy stil comming
+                        out
+                        consisting of "The Sunshine Court", "The Golden Raven" and another book which name we don't know
+                        yet.
+                        The second trilogy stil mentions the Foxes, but they are not the main focus anymore.</div>
+                    <div>All For The Game series raise a lot of serious topics, so before reading the books I would
+                        recommend reading all the
+                        <a class="the-wiki" style="font-size: 1.5em;" target="_blank"
+                            href="https://booktriggerwarnings.com/The_Foxhole_Court_by_Nora_Sakavic">trigger
+                            warnings</a>. If you ignored my warnings, it is on your conscience.
+                    </div>
+                    </p>
+                </section>
+
+
+
+
+                <section>
+                    <h2 id="exy">Exy</h2>
+                    <p>Exy is a sport played on a soccer-sized court that has walls and ceilings made of plexiglass. It
+                        is "an
+                        evolved sort of lacrosse [...] with the violence of ice hockey". A team consists of six players,
+                        each of
+                        which has a racquet with varying depths of netting. To score, the players must shoot the ball at
+                        the
+                        goal, a rectangle marked on the shorter wall. The goal will light up in red if it has been hit.
+                        The
+                        objective of the game is to out-score one's opponents.
+                        Exy is played in two forty-five minute halves with a fifteen minute halftime break.</p>
+
+                    <h3 id="court">Court</h3>
+                    <div id="court-img"><img
+                            src="https://astorydiary.wordpress.com/wp-content/uploads/2017/01/exy.jpg?w=283&h=448"
+                            alt="court">
+                    </div>
+                    <p>
+                    <div>An Exy court is 60 yards wide x 100 yards long x 10 yards tall (or 55 x 91 x 9 in meters --
+                        roughly the
+                        size of a soccer field). It is completely enclosed by a half-inch thick plexiglass wall:
+                        primarily for
+                        rebounds and passing, but also to protect the audience from being struck by the ball. Both Home
+                        and Away
+                        have doors to allow players on and off that bolt on the outside. These doors must not be open
+                        when the
+                        ball is in play.</div>
+                    <div>The court is divided into fourths by three lines: first-court (near the Home goal), half-court,
+                        and
+                        far-court (near the Away goal). Penalty shots are taken from marked spots halfway between
+                        first-court/far-court and the Home/Away goal.</div>
+
+                    <div>The Exy goals are on either end of the court. The actual goal is a 3 x 7 yard (2.7 x 6.4 meter)
+                        section
+                        on the wall outlined by a bold line. The goalkeeper's territory is the 3 x 7 area on the ground
+                        directly
+                        in front of the goal, also marked by a line. Players are not allowed to cross the goal line. The
+                        boxed-in area of the goal wall is laden with sensors. When a ball strikes inside the goal the
+                        wall will
+                        light up red. A ball that hits the goal's border itself does not count. Each goal counts as one
+                        point.
+                    </div>
+                    </p>
+
+                    <h3 id="positions">Positions</h3>
+                    <p>There are four positions:
+                    <div>
+                        <details>
+                            <summary>Strikers</summary>
+                            The striker is offense and plays to score. Strikers start the game on the half-court line.
+                            The
+                            strikers
+                            on the serving team start on the inside; strikers for the defending team are on the outside.
+                        </details>
+                        <details>
+                            <summary>Dealer</summary>
+                            The dealer serves and is thereafter the middleman; dealers have the option to specialize as
+                            offense
+                            or
+                            defense and can play as an extra striker or backliner depending on how the game is going.
+                            Dealers
+                            start
+                            on the first/far-court lines.
+                        </details>
+                        <details>
+                            <summary>Backliner</summary>
+                            The backliner is defense and protects the goal. Backliners start on the first/far-court
+                            lines.
+                        </details>
+                        <details>
+                            <summary>Goalkeeper</summary>
+                            The goalkeeper guards the goal.
+                        </details>
+                    </div>
+                    <div>Six players per team are allowed on the court at a time. Generally speaking, this allows for
+                        two
+                        strikers, a
+                        dealer, two backliners, and the goalkeeper. The goalkeeper is an optional position, however; a
+                        manager
+                        may
+                        sacrifice the goal for an extra player under certain circumstances.</div>
+
+                    <div>The minimum size for an NCAA team is currently nine players. In theory this allows for six
+                        on-court
+                        players
+                        and a sub for each position save goalkeeper. After recent events this rule is under review and
+                        posited
+                        to
+                        increase to twelve.</div>
+                    </p>
+
+                    <h3 id="rules">Rules</h3>
+                    <p>
+                    <details>
+                        <summary>Cards</summary>
+                        One yellow card is a warning. Two result in the player sitting out the remainder of the game. A
+                        player who is red-carded is immediately expelled from the ongoing game and must sit out of the
+                        next
+                        one as well.
+                    </details>
+                    <details>
+                        <summary>Referees</summary>
+                        Exy games for youths and high schoolers require four referees at minimum. From the NCAA level
+                        upward six
+                        are required, three to either side of the court.
+                    </details>
+                    <details>
+                        <summary>Off-sides is in effect on Exy courts</summary>
+                        Meaning: an offense player who does not have possession of the ball, or who is moving to take
+                        possession
+                        of the ball, must have an opposing defense player between him or herself and the opposing
+                        goalkeeper at
+                        all times. This prevents strikers from waiting near the goal to score. <br>
+                        The penalty for off-sides is loss of possession and a reset to the half-court line.
+                    </details>
+                    <details>
+                        <summary>Body checks</summary>
+                        Body checks are allowed against players who have reasonable possession of the ball: that is, who
+                        currently have it, who have just relinquished it, or who are within a moment of receiving it.
+                        The player
+                        who currently has possession of the ball may body-check any other player with no restrictions.
+                        <br>
+                        A faulty body check results in loss of possession and a reset to the next-closest court line.
+                    </details>
+                    <details>
+                        <summary>Fighting</summary>
+                        Any other form of fighting is prohibited and will result in a card. The severity decides whether
+                        the
+                        card is yellow or red; it also determines whether a team deserves a penalty shot or a simple
+                        loss in
+                        possession. Games are restarted from where play was halted; the exact spot will be decided on by
+                        the
+                        residing referee. No other player may stand within ten feet of the dealer during a mid-play
+                        serve.
+                    </details>
+                    <details>
+                        <summary>"Stick checks"</summary>
+                        "Stick checks" are allowed only between racquets. A player who strikes another player's body
+                        with his or
+                        her racquet will be carded and the opposing team will receive a penalty shot. This includes
+                        using one's
+                        racquet to trip another player. A stick check against another player's helmet is an immediate
+                        red card
+                        and earns the wounded team a penalty shot on goal.
+                    </details>
+                    <details>
+                        <summary>other</summary>
+                        <div>Balls may only be carried for 10 steps, at which point they must be passed. Acceptable
+                            passes are
+                            to a teammate, to oneself via a rebound, or a shot on goal.</div>
+                        <div>Goalkeepers are the only players allowed to touch the ball with their hands. Players cannot
+                            catch,
+                            kick,
+                            or otherwise interfere with the ball unless using their racquets. Violation of this is a
+                            stop-play
+                            and
+                            switch of possession.</div>
+                    </details>
+                    </p>
+
+                    <h3 id="game">Game</h3>
+                    <p>
+                    <div>Before games, teams are given the opportunity to warm up by running laps around the court. Then
+                        each
+                        team can practice shots on one half of the court for 20 minutes.</div>
+                    <div>Both team captains meet with the referees on the court for a handshake and a coin toss that
+                        determines
+                        which team gets first serve and which team starts playing on home court.</div>
+                    <div>Six referees are in attendance, arranged three on each side of the court, outside the walls.
+                    </div>
+                    <div>At the beginning of games, the starting line-ups are called from offense to defense. When a
+                        player's
+                        name is called, they enter the court and take their starting position.</div>
+                    </p>
+                </section>
+
+            </main>
+        </div>
+        <footer>
+            <div class="footer-part">
+                <div>
+                    <p>Info taken mostly from <br>
+                        <span class="the-wiki"><a href="https://foxhole-court.fandom.com/wiki/The_Foxhole_Court_Wikia"
+                                target="_blank">the wiki</a></span>
+                    </p>
+                </div>
+                <p>Thank you for sticking around this far</p>
+            </div>
+            <div class="footer-part">
+                <p>Nora Sakavic (author)</p>
+                <ol>
+                    <li><a href="https://x.com/norasakavic" target="_blank">Twitter</a></li>
+                    <li><a href="https://korakos.tumblr.com/fox" target="_blank">Tumblr</a></li>
+                    <li><a href="https://www.goodreads.com/korakos" target="_blank">Goodreads</a></li>
+                </ol>
+            </div>
+        </footer>
+    </div>
+
+</body>
+<script src="/JS/script.js"></script>
+
+</html>

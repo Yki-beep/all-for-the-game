@@ -1,0 +1,59 @@
+body{
+    background-color: #E5E7E8;
+    color: #572c0a;
+}
+header{
+    background-color: #F36523;
+}
+footer{
+    background-color: #F36523;
+}
+section{
+    background-color: #ff8450;
+    box-shadow: 4px 6px 0 0 rgba(115, 119, 120, 0.2);
+}
+
+a{
+    color: #572c0a;
+}
+a:hover{
+    color: #1d0900;
+}
+
+.material-symbols-outlined{
+    color: #572c0a;
+}
+.material-symbols-outlined:hover{
+    color: #1d0900;
+}
+
+.tooltip .tooltiptext {
+    background-color: #E5E7E8;
+    color: #572c0a;
+    border: solid 1px #1d0900;
+}
+
+svg {
+    fill: #572c0a;
+}
+svg:hover {
+    fill: #1d0900;
+}
+
+button {
+    color: #572c0a;
+}
+button:hover {
+    color: #1d0900;
+}
+/* #up{
+    background-color: #F36523;
+    border: 1px solid #ff8450;
+} */
+/* .icon{
+    filter: invert(17%) sepia(9%) saturate(5675%) hue-rotate(351deg) brightness(96%) contrast(95%);
+}
+.icon:hover{
+    filter: invert(3%) sepia(89%) saturate(3624%) hue-rotate(39deg) brightness(100%) contrast(103%);
+} */
+

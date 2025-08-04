@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link id="theme" rel="stylesheet" href="">
+    <title>Foxes main</title>
+</head>
+
+<body>
+    <div id="outer-conteiner">
+        <div id="inner-conteiner">
+            <header>
+                <h1><a href="/HTML/index.html" style="text-decoration: underline">the foxes</a></h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <div class="tooltip">
+                                <h3><a href="/HTML/world.html">world</a></h3>
+                                <span class="tooltiptext">recomend before other pages</span>
+                            </div>
+                        </li>
+                        <li>
+                            <h3><a href="/HTML/characters.html">characters</a></h3>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="left-icon-conteiner">
+                    <button onclick="fontSizeIncrease()">
+                        <?xml version="1.0" ?><svg class="plus icon" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.1951 5.75446C15.4738 6.06095 15.9481 6.08354 16.2546 5.80491L18.5 3.76358L20.7455 5.80491C21.052 6.08354 21.5263 6.06095 21.805 5.75446C22.0836 5.44797 22.061 4.97364 21.7545 4.69502L19.0045 2.19504C18.7185 1.93499 18.2816 1.93499 17.9956 2.19504L15.2456 4.69502C14.9391 4.97364 14.9165 5.44797 15.1951 5.75446ZM12.0001 3.99998C12.3076 3.99998 12.5839 4.18767 12.6973 4.4735L18.4472 18.9733C18.5999 19.3584 18.4115 19.7943 18.0265 19.947C17.6414 20.0997 17.2055 19.9113 17.0528 19.5263L15.2579 14.9999H8.74231L6.94736 19.5263C6.79467 19.9113 6.35876 20.0997 5.97372 19.947C5.58869 19.7943 5.40033 19.3584 5.55302 18.9733L11.3029 4.4735C11.4163 4.18767 11.6926 3.99998 12.0001 3.99998ZM9.33713 13.4999H14.6631L12.0001 6.78453L9.33713 13.4999Z" />
+                        </svg>
+                    </button>
+
+                    <button onclick="fontSizeDecrease()">
+                        <?xml version="1.0" ?><svg class="minus icon" viewBox="0 -4 28 28"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.2546 2.19505C15.9481 1.91642 15.4738 1.93901 15.1951 2.2455C14.9165 2.55199 14.9391 3.02632 15.2456 3.30495L17.9956 5.80492C18.2816 6.06497 18.7185 6.06497 19.0045 5.80492L21.7545 3.30495C22.061 3.02632 22.0836 2.55199 21.805 2.2455C21.5263 1.93901 21.052 1.91642 20.7455 2.19505L18.5 4.23638L16.2546 2.19505ZM12.0001 3.99998C12.3076 3.99998 12.5839 4.18767 12.6973 4.47351L18.4472 18.9733C18.5999 19.3584 18.4115 19.7943 18.0265 19.947C17.6414 20.0997 17.2055 19.9113 17.0528 19.5263L15.2579 14.9999H8.74231L6.94736 19.5263C6.79467 19.9113 6.35876 20.0997 5.97372 19.947C5.58869 19.7943 5.40033 19.3584 5.55302 18.9733L11.3029 4.47351C11.4163 4.18767 11.6926 3.99998 12.0001 3.99998ZM12.0001 6.78454L9.33713 13.4999H14.6631L12.0001 6.78454Z" />
+                        </svg>
+                    </button>
+                </div>
+
+
+                <div class="right-icon-conteiner">
+                    <!-- <button onclick="toggleTheme()">
+                <?xml version="1.0" ?><svg class="icon contrast" height="24" viewBox="0 0 24 24" width="24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20,7.87279794 C19.4940015,6.89397574 18.8136364,6.01990475 18,5.29168048 L18,18.7083195 C18.8136364,17.9800953 19.4940015,17.1060243 20,16.1272021 L20,7.87279794 Z M16,3.93551965 C15.3714959,3.62317975 14.7013005,3.38214996 14,3.22301642 L14,20.7769836 C14.7013005,20.61785 15.3714959,20.3768202 16,20.0644804 L16,3.93551965 Z M12,3 C7.02943725,3 3,7.02943725 3,12 C3,16.9705627 7.02943725,21 12,21 L12,3 Z M12,23 C5.92486775,23 1,18.0751322 1,12 C1,5.92486775 5.92486775,1 12,1 C18.0751322,1 23,5.92486775 23,12 C23,18.0751322 18.0751322,23 12,23 Z"
+                        fill-rule="evenodd" />
+                </svg>
+            </button> -->
+
+                    <button onclick="toggleTheme()">
+                        <?xml version="1.0" ?><svg class="icon sun" viewBox="0 0 512 512"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="Sun_and_moon">
+                                <circle cx="185.6708" cy="183.8122" r="65.625" />
+                                <path
+                                    d="M185.6708,87.5622a13.1256,13.1256,0,0,0,13.125-13.125V52.5622a13.125,13.125,0,1,0-26.25,0v21.875A13.1257,13.1257,0,0,0,185.6708,87.5622Z" />
+                                <path
+                                    d="M99.051,115.7519a13.1236,13.1236,0,1,0,18.56-18.56L102.1442,81.726a13.1236,13.1236,0,0,0-18.5595,18.56Z" />
+                                <path
+                                    d="M89.4208,183.8122a13.1257,13.1257,0,0,0-13.125-13.125H54.4208a13.125,13.125,0,0,0,0,26.25h21.875A13.1256,13.1256,0,0,0,89.4208,183.8122Z" />
+                                <path
+                                    d="M99.051,251.8725,83.5847,267.3431a13.1236,13.1236,0,1,0,18.56,18.56l15.4663-15.4706a13.1236,13.1236,0,1,0-18.5595-18.56Z" />
+                                <path
+                                    d="M185.6708,280.0622a13.1258,13.1258,0,0,0-13.125,13.125v21.875a13.125,13.125,0,0,0,26.25,0v-21.875A13.1257,13.1257,0,0,0,185.6708,280.0622Z" />
+                                <path
+                                    d="M272.2907,251.8725a13.1236,13.1236,0,1,0-18.56,18.56l15.4663,15.4706a13.1236,13.1236,0,1,0,18.56-18.56Z" />
+                                <path
+                                    d="M330.0458,183.8122a13.1257,13.1257,0,0,0-13.125-13.125h-21.875a13.125,13.125,0,0,0,0,26.25h21.875A13.1256,13.1256,0,0,0,330.0458,183.8122Z" />
+                                <path
+                                    d="M263.0109,119.5971a13.0824,13.0824,0,0,0,9.28-3.8452l15.4663-15.4663a13.1236,13.1236,0,1,0-18.56-18.56L253.7312,97.1923a13.125,13.125,0,0,0,9.28,22.4048Z" />
+                                <path
+                                    d="M456.9379,401.6714a63.97,63.97,0,0,1-14.9963,7.2055c-19.6448,6.5283-41.8787,2.9566-58.1439-9.8523a68.9311,68.9311,0,0,1-10.835-10.8339c-12.8088-16.2663-16.3806-38.5-9.8523-58.1471a63.8444,63.8444,0,0,1,7.2077-14.9931,8.8036,8.8036,0,0,0-10.1172-13.3034,87.5188,87.5188,0,1,0,110.0372,110.04A8.8,8.8,0,0,0,456.9379,401.6714Z" />
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </header>
+            <main>
+                <!-- <div class="icon-conteiner">
+                    <button id="up">up</button>
+                </div> -->
+                <section>
+                    <h2>Foxes</h2>
+                    <p>
+                    <div>Foxes are the Class 1 Exy team of Palmetto State University. Founded by Coach Wymack, its
+                        mission is to
+                        give athletes from a broken home another chance, described as something similar to a half-way
+                        house.
+                    </div>
+                    <div>The Foxes practice at the Foxhole Court and the gym. They live on the third floor of Fox Tower,
+                        the
+                        athletes' dormitory. They donate a portion of their ticket sales to charity, making their
+                        tickets a
+                        little more expensive than the other teams in their league. </div>
+                    <div>The Foxes are a ragtag band of individuals. At the start of a year, they needed a certain
+                        amount of
+                        time
+                        to fight over their hierarchy. Wymack doesn't interfere with their fights, although he punishes
+                        them
+                        with cardio and drills. <br>There is an understanding between all Foxes to not pry into other
+                        people's
+                        business. Neil speculates that it has to do with all of them coming from broken homes and
+                        knowing that
+                        questions are uncomfortable. Mostly, they don't question other people's odd behavior or habits.
+                    </div>
+                    <div>A favorite pastime of the team is betting on even the smallest things, be it relationships or
+                        how a
+                        person will react to a specific event. The betting pool can get quite big, depending on the
+                        topic.</div>
+                    </p>
+                </section>
+
+            </main>
+        </div>
+        <footer>
+            <div class="footer-part">
+                <div>
+                    <p>Info taken mostly from <br>
+                        <span class="the-wiki"><a href="https://foxhole-court.fandom.com/wiki/The_Foxhole_Court_Wikia"
+                                target="_blank">the wiki</a></span>
+                    </p>
+                </div>
+                <p>Thank you for sticking around this far</p>
+            </div>
+            <div class="footer-part">
+                <p>Nora Sakavic (author)</p>
+                <ol>
+                    <li><a href="https://x.com/norasakavic" target="_blank">Twitter</a></li>
+                    <li><a href="https://korakos.tumblr.com/fox" target="_blank">Tumblr</a></li>
+                    <li><a href="https://www.goodreads.com/korakos" target="_blank">Goodreads</a></li>
+                </ol>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="/JS/script.js"></script>
+
+</html>
